@@ -88,23 +88,23 @@ The wandb configuration for sweep:
 ### Testing the best model on Test dataset:
   After running the 54 sweep runs, I found the following parameter as giving best validation accuracy:
 
-  __Validation_accuracy__: 35.7%
+  - __Validation_accuracy__: 35.7%
 
-  __Filter Size__:  [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3]] (In corresponding layers)
+  - __Filter Size__:  [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3]] (In corresponding layers)
 
-  __Activation function__ : selu
+  - __Activation function__ : selu
 
-  __Numner of Fiters__: [12, 12, 12, 12, 12]  (In corresponding layers)
+ - __Numner of Fiters__: [12, 12, 12, 12, 12]  (In corresponding layers)
 
-  __Data Augmentation__: True
+ - __Data Augmentation__: True
  
-  __Batch Normalization__: True
+ - __Batch Normalization__: True
 
-  __Dropout__: 0.3
+ - __Dropout__: 0.3
 
-  __Number of neurons in Dense Layer__ : 200
+ - __Number of neurons in Dense Layer__ : 200
 
-  __Test Accuracy__ found is __35.15%__
+  - __Test Accuracy__ found is __35.15%__
 
 
 ## Appendix
