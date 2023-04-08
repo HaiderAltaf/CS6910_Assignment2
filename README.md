@@ -15,8 +15,6 @@ In Part-B, I have iported pretrained VGG16 CNN model using pytorch and modified 
 
 ### References:
 
-### References:
-
 - Source1- https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/
 
 - source2- https://pyimagesearch.com/2021/07/19/pytorch-training-your-first-convolutional-neural-network-cnn/
