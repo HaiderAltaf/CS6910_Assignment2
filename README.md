@@ -8,7 +8,7 @@ In Part-B, I have iported pretrained VGG16 CNN model using pytorch and modified 
 
 ## Authors
 
-- [@Haider Altaf am22s020](https://www.github.com/HaiderAltaf)
+ [@Haider Altaf am22s020](https://www.github.com/HaiderAltaf)
 
 
 ## Part-A
