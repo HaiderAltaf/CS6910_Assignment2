@@ -15,19 +15,29 @@ In Part-B, I have iported pretrained VGG16 CNN model using pytorch and modified 
 
 ### References:
 
-Source1- https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/
+### References:
 
-source2- https://pyimagesearch.com/2021/07/19/pytorch-training-your-first-convolutional-neural-network-cnn/
+- Source1- https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/
+
+- source2- https://pyimagesearch.com/2021/07/19/pytorch-training-your-first-convolutional-neural-network-cnn/
 
 
-source3- https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html
+- source3- https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html
 
 ### Libraries Used: 
 
-Used the pytoch, pytorchvision and other necessary libraries for the CNN model buiding and training.
+- Used the pytoch, pytorchvision and other necessary libraries for the CNN model buiding and training.
 
 ### Device
 
+- Device will determine whether to run the training on GPU or CPU.
+
+  code: device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+### Data Pre-processing
+
+- Created a function named data_pre_processing to upload the downloaded datasets(train and test).
+- 
 
 ## Appendix
 
