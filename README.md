@@ -3,7 +3,7 @@
 
 The assignment contains two parts.
 In Part-A, I have build CNN model from scratch using pytorch to train on iNaturalist dataset.
-In Part-B, I have iported pretrained VGG16 CNN model using pytorch and modified it to make suitable for iNaturalist dataset(having only 10k train images).
+In Part-B, I have imported pretrained VGG16 CNN model using pytorch and modified it to make suitable for iNaturalist dataset(having only 10k train images).
 
 
 ## Authors
