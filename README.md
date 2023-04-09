@@ -86,25 +86,34 @@ The wandb configuration for sweep:
 - wandb.agent(sweep_id, train_CNN, count=150)
 
 ### Testing the best model on Test dataset:
-  After running the 54 sweep runs, I found the following parameter as giving best validation accuracy:
+I have created function named __test_model()__ to test the trained model using test dataset.
 
-  - __Validation_accuracy__: 35.7%
+We need to configure diffrenet parameters of the best model that we found using sweep runs. In default I have given the parameters which give best results for my runs.
 
-  - __Filter Size__:  [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3]] (In corresponding layers)
+After running the 54 sweep runs, I found the following parameter as giving best validation accuracy:
 
-  - __Activation function__ : selu
+- __Validation_accuracy__: 35.7%
 
- - __Numner of Fiters__: [12, 12, 12, 12, 12]  (In corresponding layers)
+- epochs = 10
 
- - __Data Augmentation__: True
- 
- - __Batch Normalization__: True
+- __Filter Size__:  [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3]] (In corresponding layers)
 
- - __Dropout__: 0.3
+- __Activation function__ : selu
 
- - __Number of neurons in Dense Layer__ : 200
+- __Numner of Fiters__: [12, 12, 12, 12, 12]  (In corresponding layers)
 
-  - __Test Accuracy__ found is __35.15%__
+- __Data Augmentation__: True
+
+- __Batch Normalization__: True
+
+- __Dropout__: 0.3
+
+- __Number of neurons in Dense Layer__ : 200
+
+After setting the above parameters, I have run the __test_model()__ to check the test accuracy.
+
+- __Test Accuracy__ found is __35.15%__
+
 
 
 ## Appendix
