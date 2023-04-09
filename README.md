@@ -162,7 +162,26 @@ Foloowing options are available for freezing.
     option2 = "freeze first 12", Freezing all convolutional layers except last convolutional layer.
     option3 = "freeze first 10", Freeze the first 10 convolutional layers except 3.
 
+### Train the modified model on __iNaturalist__ dataset
 
+I have created a function named as __train_model()__.
+
+- This function is created to bring all the inputs needed to train the modified VGG16 CNN model 
+
+- calculate the train loss, train accuracy and validation accuracy.
+    
+- First we have choosen Adam as optimizer with __learning rate= 1e-4__, and __weight decay = 1e-4__. 
+
+- Then __cross entropy loss__ is choosen as the loss function.
+    
+- __data_pre_processing__ function initialized to give the dataloders and the datasets needed to train and evaluate the model.
+
+- model is set to __.train() mode__ to do backprop with forward prop to train the model.
+
+- for training,  the images in batch are taken and feed to forward prop to get loss value then backprop is performed then the weights and biases are updated.
+
+
+- After training for each epoch train accuracy and validation accuracy are calculated and printed
 ## Appendix
 
 Any additional information goes here
