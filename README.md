@@ -114,6 +114,54 @@ After setting the above parameters, I have run the __test_model()__ to check the
 
 - __Test Accuracy__ found is __35.15%__
 
+## Part-B
+
+### References:
+
+- Source1- https://pytorch.org/docs/master/notes/autograd.html
+
+- source2- https://www.youtube.com/watch?v=qaDe0qQZ5AQ&list=PL2zZiFciIyS1RYRbav7DIwcwEEw8ir_QU&index=6
+
+### These things are same as in Part-A
+
+- Libraries used 
+
+- device
+
+- data pre-processing
+
+- evaluate function
+
+- installing and importing wandb
+
+### CNN Model
+
+I have imported the __pre-trained VGG16__ CNN model available in pytorch. The VGG16 is trained on ImageNet dataset.
+
+ - Code to upload the model: model = torchvision.models.vgg16(__pretrained=True__)
+
+I will __modify__ the model to make it suitable for __iNaturalist__ dataset (only 10,000 training samples).
+
+### Modification in the VGG16
+
+I have created a function named as __modified_model()__ to modify the pretrained model, it take model and modification choice as input. 
+
+First, I have modified the last layer of the vgg16 model to make the ouput having 10 classes instead of 1000.
+ - 
+
+    Code :  model.classifier[6] = Linear(in_features=4096, out_features=10, bias=True)
+
+  Then, I have given options to freeze the convolutional layers to prevent from updating of the parameters during the training using iNaturalist dataset
+
+VGG16 has 13 Convolutional layers and 3 linear dense layer.
+  
+I will freeze only the convolutional layers.
+
+Foloowing options are available for freezing.
+
+    option1 = "freeze all", Freeze all layers except the fully connected layers.
+    option2 = "freeze first 12", Freezing all convolutional layers except last convolutional layer.
+    option3 = "freeze first 10", Freeze the first 10 convolutional layers except 3.
 
 
 ## Appendix
