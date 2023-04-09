@@ -147,11 +147,10 @@ I will __modify__ the model to make it suitable for __iNaturalist__ dataset (onl
 I have created a function named as __modified_model()__ to modify the pretrained model, it take model and modification choice as input. 
 
 First, I have modified the last layer of the vgg16 model to make the ouput having 10 classes instead of 1000.
- - 
 
     Code :  model.classifier[6] = Linear(in_features=4096, out_features=10, bias=True)
 
-  Then, I have given options to freeze the convolutional layers to prevent from updating of the parameters during the training using iNaturalist dataset
+Then, I have given options to freeze the convolutional layers to prevent from updating of the parameters during the training using iNaturalist dataset
 
 VGG16 has 13 Convolutional layers and 3 linear dense layer.
   
