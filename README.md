@@ -11,7 +11,7 @@ In Part-B, I have imported pretrained VGG16 CNN model using pytorch and modified
  [@Haider Altaf am22s020](https://www.github.com/HaiderAltaf)
 
 
-## Part-A
+## Part A: Training from scratch
 
 ### References:
 
@@ -124,7 +124,7 @@ After setting the above parameters, I have run the __test_model()__ to check the
 
 - __Test Accuracy__ found is __35.15%__
 
-## Part-B
+## Part B : Fine-tuning a pre-trained model
 
 ### References:
 
