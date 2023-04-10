@@ -32,6 +32,16 @@ I have write and run the code in Jupyter notebook and used GPU of my system for 
 - Device will determine whether to run the training on GPU or CPU.
 
   code: device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+  
+### Arg parse 
+
+created function __arg_parse()__ to pass the command line arguments.
+
+- Using argparse, I have define the arguments and options that my program accepts,
+- argparse will run the code, pass arguments from command line and 
+    automatically generate help messages.
+- I have given the defaults values for 
+    all the arguments, so code can be run without passing any arguments.
 
 ### Data Pre-processing:
 
@@ -127,6 +137,8 @@ After setting the above parameters, I have run the __test_model()__ to check the
 - Libraries used 
 
 - device
+
+- Arg parse
 
 - data pre-processing
 
