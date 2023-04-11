@@ -5,7 +5,6 @@
 
  [@Haider Altaf am22s020](https://www.github.com/HaiderAltaf)
 
-
 ## General Instructions:
 
 The assignment contains two parts.
