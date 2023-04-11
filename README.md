@@ -1,6 +1,11 @@
 
 # CS6910 Assignment-2
 
+## Authors
+
+ [@Haider Altaf am22s020](https://www.github.com/HaiderAltaf)
+
+
 ## General Instructions:
 
 The assignment contains two parts.
@@ -20,11 +25,6 @@ If you are running the jupyter notebooks on colab, the libraries from the requir
 The dataset for this project can be found at :
 
     https://storage.googleapis.com/wandb_datasets/nature_12K.zip
-
-## Authors
-
- [@Haider Altaf am22s020](https://www.github.com/HaiderAltaf)
-
 
 ## Part A: Training from scratch
 
