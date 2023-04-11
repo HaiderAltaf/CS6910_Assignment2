@@ -247,6 +247,7 @@ Description of various command line arguments
     --epochs : Number of Epochs: integer value
     --batch_size : Batch Size: integer value
     --optimizer : choice of optimizer for backprop : "adam" or "sgd"
+    --learning_rate: learning rate of optimizer: 0.0001 or 0.001
    
     
 ### Training our CNN model directly by running the command line arguments
