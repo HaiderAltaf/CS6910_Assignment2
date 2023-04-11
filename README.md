@@ -103,7 +103,11 @@ Description of various command line arguments
     
 ### Training our CNN model
 I have created training function called __train_partA.py__.
-We can run the code using command line arguments. Or we may also use .ipynb file for partA problem to train the model and test it.
+
+We can run the code using command line arguments. 
+
+Or we may also use .ipynb file for partA problem to train the model and test it.
+
 ### Running the wandb sweep:
 
 The wandb configuration for sweep:
