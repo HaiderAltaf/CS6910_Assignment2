@@ -29,18 +29,12 @@ The dataset for this project can be found at :
 
 ### References:
 
-- Source1 
-
       https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/
 
-- source2
-
       https://pyimagesearch.com/2021/07/19/pytorch-training-your-first-convolutional-neural-network-cnn/
-
-
-- source3
  
       https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html
+      
 ### Libraries Used: 
 
 - Used the pytoch, __pytorchvision__ and other necessary libraries for the CNN model buiding and training.
