@@ -31,9 +31,11 @@ The dataset for this project can be found at :
 
 -      https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/
 
-      https://pyimagesearch.com/2021/07/19/pytorch-training-your-first-convolutional-neural-network-cnn/
+
+-      https://pyimagesearch.com/2021/07/19/pytorch-training-your-first-convolutional-neural-network-cnn/
+
  
-      https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html
+-     https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html
       
 ### Libraries Used: 
 
