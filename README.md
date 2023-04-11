@@ -57,7 +57,18 @@ created function __arg_parse()__ to pass the command line arguments.
     automatically generate help messages.
 - I have given the defaults values for 
     all the arguments, so code can be run without passing any arguments.
-- 
+    
+Description of various command line arguments
+
+    --wandb_sweep : Do you want to sweep or not: Enter True or False. Default value is False. 
+    --dropout : Dropout: float value
+    --dataAugment : Data Augmentation: True or False
+    --numEpochs : Number of Epochs: integer value
+    --batchSize : Batch Size: integer value
+    --denseLayer : Dense Layer size: integer value
+    --learningRate : Learning Rate: float value
+    --trainLayers : Number of trainable layers: integer value
+    --denseAct : Dense Layer Activation function: string value
 
 ### Data Pre-processing:
 
