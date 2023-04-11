@@ -102,7 +102,7 @@ Description of various command line arguments
     --batch_normalisation : Batch Normalization in each layer: True or False
     
 ### Training our CNN model
-I have created training function called __train_partA.py__ file, we can run the code using command line arguments. 
+I have created training function called __train_partA.py__ file it has everything needed for training and testing our model. we can run the code using command line arguments. 
 
 Or we may also use .ipynb file for partA problem to train the model and test it.
 
@@ -227,6 +227,33 @@ I have created a function named as __train_model()__.
 
 
 - After training for each epoch train accuracy and validation accuracy are calculated and printed
+
+### Arg parse 
+
+created function __arg_parse()__ to pass the command line arguments.
+
+- Using argparse, I have define the arguments and options that my program accepts,
+- argparse will run the code, pass arguments from command line and 
+    automatically generate help messages.
+- __I have given the defaults values for 
+    all the arguments, so code can be run without passing any arguments.__
+    
+Description of various command line arguments
+
+    --wandb_sweep : Do you want to sweep or not: Enter True or False. Default value is False. 
+    --wandb_entity : Login username for wandb. Default is given but if you are already using wandb, you will be logged in automatically.
+    --wandb_project : name to initialize your run. No need to mention if you are just trying the code.
+    --data_augmentation : Data Augmentation: True or False
+    --epochs : Number of Epochs: integer value
+    --batch_size : Batch Size: integer value
+    --optimizer : choice of optimizer for backprop : "adam" or "sgd"
+   
+    
+### Training our CNN model directly by running the command line arguments
+I have created training function called __train_partB.py__ file it has everything needed for training and testing our model, we can run the code using command line arguments. 
+
+Or we may also use .ipynb file for partB problem to train the model and test it.
+
 ## Appendix
 
 Any additional information goes here
