@@ -11,10 +11,7 @@ Install the required libraries using the following command :
 
     pip install -r requirements.txt
 
-
-The project is divided into two parts: PART A and PART B. You can find the juypter notebooks in the respective folders. Along with jupyter notebooks we have also given python code filed (.py) files. These contain the code to direclty train and test the CNN in a non interactive way.
-
-For seeing the outputs and the various explanations, and how the code has developed, please check the jupyter notebooks (i.e., .ipynb files for both part A and part B). For training and testing the CNN model from command line, run the (.py) file by following the instructions given in below sections.
+You can find the juypter notebooks in the respective folders. Along with jupyter notebooks we have also given python code filed (.py) files. These contain the code to direclty train and test the CNN in a non interactive way.
 
 If you are running the jupyter notebooks on colab, the libraries from the requirements.txt file are preinstalled, with the exception of wandb. You can install wandb by using the following command :
 
