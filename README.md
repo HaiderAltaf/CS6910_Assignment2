@@ -1,10 +1,28 @@
 
 # CS6910 Assignment-2
 
+## General Instructions:
+
 The assignment contains two parts.
 In Part-A, I have build CNN model from scratch using pytorch to train on iNaturalist dataset.
 In Part-B, I have imported pretrained VGG16 CNN model using pytorch and modified it to make suitable for iNaturalist dataset(having only 10k train images).
 
+Install the required libraries using the following command :
+
+    pip install -r requirements.txt
+
+
+The project is divided into two parts: PART A and PART B. You can find the juypter notebooks in the respective folders. Along with jupyter notebooks we have also given python code filed (.py) files. These contain the code to direclty train and test the CNN in a non interactive way.
+
+For seeing the outputs and the various explanations, and how the code has developed, please check the jupyter notebooks (i.e., .ipynb files for both part A and part B). For training and testing the CNN model from command line, run the (.py) file by following the instructions given in below sections.
+
+If you are running the jupyter notebooks on colab, the libraries from the requirements.txt file are preinstalled, with the exception of wandb. You can install wandb by using the following command :
+
+    !pip install wandb
+
+The dataset for this project can be found at :
+
+    https://storage.googleapis.com/wandb_datasets/nature_12K.zip
 
 ## Authors
 
@@ -42,6 +60,7 @@ created function __arg_parse()__ to pass the command line arguments.
     automatically generate help messages.
 - I have given the defaults values for 
     all the arguments, so code can be run without passing any arguments.
+- 
 
 ### Data Pre-processing:
 
