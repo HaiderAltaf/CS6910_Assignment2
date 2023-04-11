@@ -48,28 +48,7 @@ I have write and run the code in Jupyter notebook and used GPU of my system for 
 
   code: device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
   
-### Arg parse 
 
-created function __arg_parse()__ to pass the command line arguments.
-
-- Using argparse, I have define the arguments and options that my program accepts,
-- argparse will run the code, pass arguments from command line and 
-    automatically generate help messages.
-- __I have given the defaults values for 
-    all the arguments, so code can be run without passing any arguments.__
-    
-Description of various command line arguments
-
-    --wandb_sweep : Do you want to sweep or not: Enter True or False. Default value is False. 
-    --wandb_entity : Login username for wandb. Default is given but if you are already using wandb, you will be logged in automatically.
-    --wandb_project : name to initialize your run. No need to mention if you are just trying the code.
-    --data_augmentation : Data Augmentation: True or False
-    --epochs : Number of Epochs: integer value
-    --batch_size : Batch Size: integer value
-    --dense_layer : Dense Layer size: integer value
-    --activation : Activation function: string value
-    --batch_normalisation : Batch Normalization in each layer: True or False
-    
 ### Data Pre-processing:
 
 - Created a function named __data_pre_processing__ to upload the downloaded datasets(train and test).
@@ -100,6 +79,31 @@ Run the below code
 - I have also include the commands needed to integrate the __wandb__ __sweep__. I have __login__ to wandb account. I have already imported the __wandb__, now I am giving the __default values__ of our variable for __sweep__. After that I have defined the __wandb run name__ which will be assign to each run. Values like __epoch__, __train loss__, __train accuracy__ and __validation accuracy__ are login to wandb.
 - __Saving__ the wandb run and __finishing__ the run
 
+### Arg parse 
+
+created function __arg_parse()__ to pass the command line arguments.
+
+- Using argparse, I have define the arguments and options that my program accepts,
+- argparse will run the code, pass arguments from command line and 
+    automatically generate help messages.
+- __I have given the defaults values for 
+    all the arguments, so code can be run without passing any arguments.__
+    
+Description of various command line arguments
+
+    --wandb_sweep : Do you want to sweep or not: Enter True or False. Default value is False. 
+    --wandb_entity : Login username for wandb. Default is given but if you are already using wandb, you will be logged in automatically.
+    --wandb_project : name to initialize your run. No need to mention if you are just trying the code.
+    --data_augmentation : Data Augmentation: True or False
+    --epochs : Number of Epochs: integer value
+    --batch_size : Batch Size: integer value
+    --dense_layer : Dense Layer size: integer value
+    --activation : Activation function: string value
+    --batch_normalisation : Batch Normalization in each layer: True or False
+    
+### Training our CNN model
+I have created training function called __train_partA.py__.
+We can run the code using command line arguments. Or we may also use .ipynb file for partA problem to train the model and test it.
 ### Running the wandb sweep:
 
 The wandb configuration for sweep:
