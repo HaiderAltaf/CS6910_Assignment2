@@ -267,6 +267,6 @@ Or we may also use .ipynb file for partB problem to train the model and test it.
 
 You can download the model from the link  google driven given below.
 
-    https://drive.google.com/drive/folders/11etp40yIrDahWTpMRCMF3xLnJ04JNt36?usp=share_link
+    https://drive.google.com/file/d/1YNrTsK7mum6IavcyN4NqPJd-nfpr_TK_/view?usp=sharing
 
 
