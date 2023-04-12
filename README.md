@@ -103,7 +103,7 @@ Description of various command line arguments
     --batch_normalisation : Batch Normalization in each layer: True or False
     
 ### 10. Training our CNN model
-I have created training function called __train_partA.py__ file it has everything needed for training and testing our model. we can run the code using command line arguments. 
+I have created training file called __train_partA.py__ file it has everything needed for training and testing our model. we can run the code using command line arguments. 
 
 Or we may also use .ipynb file for partA problem to train the model and test it.
 
