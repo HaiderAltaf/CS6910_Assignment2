@@ -41,7 +41,7 @@ The dataset for this project can be found at :
 
 - Used the pytoch, __pytorchvision__ and other necessary libraries for the CNN model buiding and training.
 
-### Device:
+### 3. Device:
 I have write and run the code in Jupyter notebook and used GPU of my system for training.
 
 - Device will determine whether to run the training on GPU or CPU.
@@ -49,28 +49,28 @@ I have write and run the code in Jupyter notebook and used GPU of my system for 
   code: device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
   
 
-### Data Pre-processing:
+### 4. Data Pre-processing:
 
 - Created a function named __data_pre_processing__ to upload the downloaded datasets(train and test).
 - Give path of the downloaded train and test dataset in specified places to upload it.
 - The output of the function are __train_loader__, __test_loader__, __val_loader__, __train_dataset__, __test_dataset__.
 
-### Installing wandb and importing wandb:
+### 5. Installing wandb and importing wandb:
 Run the below code 
 - !pip install wandb
 - import wandb
 
-### CNN model:
+### 6. CNN model:
 - My model has five consecutive convolutional layers, each layer has set of __2D convolution__ => __Batch Nromalisation__ => __non-linear activation function__ => __Dropout__ => __max pool layers__.
 - The code is  flexible such that the number of filters, size of filters, and activation function of the convolution layers and dense layers can be changed. We can change the number of neurons in the dense layer.
 - I have created a class named __ConvNeuNet(nn.Modeule)__, in this nitialised the __init__ function with arguments having flexible inputs. In __init__ initialised all the convolution layers, dense layer and output layer.
 - Within the class, I have created __forward()__ function in which all the layers are arranged in sequence. The output of forward is a tensor having probability of ten classes.
 
-### Define evaluate function:
+### 7. Define evaluate function:
 - __evalute()__ function created to find the accuracy of the any dataloader(train_loader etc).
 - This function will be used to find accuracy during training and testing phase.
 
-### Function for training the model:
+### 8. Function for training the model:
 - Created __train_CNN()__ function to train our model.
 - In this, first model is defined and it is exported to the device (either GPU or CPU).
 - Optimizer and loss function is imported using __torch__ library.
@@ -79,7 +79,7 @@ Run the below code
 - I have also include the commands needed to integrate the __wandb__ __sweep__. I have __login__ to wandb account. I have already imported the __wandb__, now I am giving the __default values__ of our variable for __sweep__. After that I have defined the __wandb run name__ which will be assign to each run. Values like __epoch__, __train loss__, __train accuracy__ and __validation accuracy__ are login to wandb.
 - __Saving__ the wandb run and __finishing__ the run
 
-### Arg parse 
+### 9. Arg parse 
 
 created function __arg_parse()__ to pass the command line arguments.
 
@@ -101,12 +101,12 @@ Description of various command line arguments
     --activation : Activation function: string value
     --batch_normalisation : Batch Normalization in each layer: True or False
     
-### Training our CNN model
+### 10. Training our CNN model
 I have created training function called __train_partA.py__ file it has everything needed for training and testing our model. we can run the code using command line arguments. 
 
 Or we may also use .ipynb file for partA problem to train the model and test it.
 
-### Running the wandb sweep:
+### 11. Running the wandb sweep:
 
 The wandb configuration for sweep:
 - sweep_config = {"name": "cs6910_assignment2", "method": "bayes"}   
@@ -128,7 +128,7 @@ The wandb configuration for sweep:
 - sweep_id = wandb.sweep(sweep_config, entity="am22s020", project="cs6910_assignment2")
 - wandb.agent(sweep_id, train_CNN, count=150)
 
-### Testing the best model on Test dataset:
+### 12. Testing the best model on Test dataset:
 I have created function named __test_model()__ to test the trained model using test dataset.
 
 We need to configure diffrenet parameters of the best model that we found using sweep runs. In default I have given the parameters which give best results for my runs.
@@ -157,7 +157,7 @@ After setting the above parameters, I have run the __test_model()__ to check the
 
 - __Test Accuracy__ found is __35.15%__
 
-### Best Model checked on test dataset
+### 13. Best Model checked on test dataset
 
 You can download the model from the link  google driven given below.
 
@@ -166,13 +166,13 @@ You can download the model from the link  google driven given below.
 
 ## Part B : Fine-tuning a pre-trained model
 
-### References:
+### 1. References:
 
 - Source1- https://pytorch.org/docs/master/notes/autograd.html
 
 - source2- https://www.youtube.com/watch?v=qaDe0qQZ5AQ&list=PL2zZiFciIyS1RYRbav7DIwcwEEw8ir_QU&index=6
 
-### These things are same as in Part-A
+### 2. These things are same as in Part-A
 
 - Libraries used 
 
@@ -186,7 +186,7 @@ You can download the model from the link  google driven given below.
 
 - installing and importing wandb
 
-### CNN Model
+### 3. CNN Model
 
 I have imported the __pre-trained VGG16__ CNN model available in pytorch. The VGG16 is trained on ImageNet dataset.
 
@@ -194,7 +194,7 @@ I have imported the __pre-trained VGG16__ CNN model available in pytorch. The VG
 
 I will __modify__ the model to make it suitable for __iNaturalist__ dataset (only 10,000 training samples).
 
-### Modification in the VGG16
+### 4. Modification in the VGG16
 
 I have created a function named as __modified_model()__ to modify the pretrained model, it take model and modification choice as input. 
 
@@ -214,7 +214,7 @@ Foloowing options are available for freezing.
     option2 = "freeze first 12", Freezing all convolutional layers except last convolutional layer.
     option3 = "freeze first 10", Freeze the first 10 convolutional layers except 3.
 
-### Train the modified model on __iNaturalist__ dataset
+### 5. Train the modified model on __iNaturalist__ dataset
 
 I have created a function named as __train_model()__.
 
@@ -235,7 +235,7 @@ I have created a function named as __train_model()__.
 
 - After training for each epoch train accuracy and validation accuracy are calculated and printed
 
-### Arg parse 
+### 6. Arg parse 
 
 created function __arg_parse()__ to pass the command line arguments.
 
@@ -257,18 +257,15 @@ Description of various command line arguments
     --learning_rate: learning rate of optimizer: 0.0001 or 0.001
    
     
-### Training our CNN model directly by running the command line arguments
+### 7. Training our CNN model directly by running the command line arguments
 I have created training function called __train_partB.py__ file it has everything needed for training and testing our model, we can run the code using command line arguments. 
 
 Or we may also use .ipynb file for partB problem to train the model and test it.
 
-### Best Model checked on test dataset
+### 8. Best Model checked on test dataset
 
 You can download the model from the link  google driven given below.
 
     https://drive.google.com/drive/folders/11etp40yIrDahWTpMRCMF3xLnJ04JNt36?usp=share_link
 
-## Appendix
-
-Any additional information goes here
 
