@@ -62,6 +62,7 @@ Run the below code
 
 ### 6. CNN model:
 - My model has five consecutive convolutional layers, each layer has set of __2D convolution__ => __Batch Nromalisation__ => __non-linear activation function__ => __Dropout__ => __max pool layers__.
+- One dense layer and one output layer. I have used the softmax as activation function in output layer.
 - The code is  flexible such that the number of filters, size of filters, and activation function of the convolution layers and dense layers can be changed. We can change the number of neurons in the dense layer.
 - I have created a class named __ConvNeuNet(nn.Modeule)__, in this nitialised the __init__ function with arguments having flexible inputs. In __init__ initialised all the convolution layers, dense layer and output layer.
 - Within the class, I have created __forward()__ function in which all the layers are arranged in sequence. The output of forward is a tensor having probability of ten classes.
