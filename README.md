@@ -27,7 +27,7 @@ The dataset for this project can be found at :
 
 ## Part A: Training from scratch
 
-### References:
+### 1. References:
 
 -      https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/
 
@@ -37,7 +37,7 @@ The dataset for this project can be found at :
  
 -     https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html
       
-### Libraries Used: 
+### 2. Libraries Used: 
 
 - Used the pytoch, __pytorchvision__ and other necessary libraries for the CNN model buiding and training.
 
@@ -261,6 +261,12 @@ Description of various command line arguments
 I have created training function called __train_partB.py__ file it has everything needed for training and testing our model, we can run the code using command line arguments. 
 
 Or we may also use .ipynb file for partB problem to train the model and test it.
+
+### Best Model checked on test dataset
+
+You can download the model from the link  google driven given below.
+
+    https://drive.google.com/drive/folders/11etp40yIrDahWTpMRCMF3xLnJ04JNt36?usp=share_link
 
 ## Appendix
 
