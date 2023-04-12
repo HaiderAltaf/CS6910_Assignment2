@@ -157,6 +157,13 @@ After setting the above parameters, I have run the __test_model()__ to check the
 
 - __Test Accuracy__ found is __35.15%__
 
+### Best Model checked on test dataset
+
+You can download the model from the link  google driven given below.
+
+    https://drive.google.com/drive/folders/11etp40yIrDahWTpMRCMF3xLnJ04JNt36?usp=share_link
+
+
 ## Part B : Fine-tuning a pre-trained model
 
 ### References:
