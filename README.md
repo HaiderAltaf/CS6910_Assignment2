@@ -108,7 +108,7 @@ I have created training file called __train_partA.py__ file it has everything ne
 
 Or we may also use .ipynb file for partA problem to train the model and test it.
 
-### 11. Running the wandb sweep:
+### 11. Hyperparameter tunning using wandb sweep:
 
 The wandb configuration for sweep:
 - sweep_config = {"name": "cs6910_assignment2", "method": "bayes"}   
