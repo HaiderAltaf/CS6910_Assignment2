@@ -1,5 +1,5 @@
 
-# CS6910 Assignment -2
+# CNN model from scratch
 
 ## Authors
 
